@@ -71,7 +71,7 @@ app.get('/', (req, res, next)=>{
     res.send({status: 'hello'})
 })
 mongoConnect(() => {
-     app.listen(port, ()=>{
+     app.listen(port, '103.174.102.185', ()=>{
         console.log('Connected at ' + port)
     });
 })
